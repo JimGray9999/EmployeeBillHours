@@ -12,8 +12,10 @@ firebase.initializeApp(config);
 
 // initial variables
 var database = firebase.database();
-// TODO: variables for the 4 fields to capture
-
+var empName = "";
+var empRole = "";
+var empStart = "";
+var empRate = "";
 
 
 // on value function
@@ -24,10 +26,17 @@ database.on("value", function(snapshot) {
 
 // on click function
 //TODO: add the id for the button
-$("#").on("click", function() {
+$("#submitBtn").on("click", function() {
 	// 
+	empName = $("#empNameForm").val().trim();
+	empRole = $("#empRoleForm").val().trim();
+	empStart = $("#startDateForm").val().trim();
+	empRate = $("#rateForm").val().trim();
 
 	database.ref().push(){
-
+		empName: empName,
+		empRole: empRole,
+		empStart: empStart,
+		empRate: empRate
 	}
 });
