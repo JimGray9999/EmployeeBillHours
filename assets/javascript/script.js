@@ -10,3 +10,24 @@ var config = {
 
 firebase.initializeApp(config);
 
+// initial variables
+var database = firebase.database();
+// TODO: variables for the 4 fields to capture
+
+
+
+// on value function
+database.on("value", function(snapshot) {
+	console.log(snapshot.val());
+});
+
+
+// on click function
+//TODO: add the id for the button
+$("#").on("click", function() {
+	// 
+
+	database.ref().push(){
+
+	}
+});
