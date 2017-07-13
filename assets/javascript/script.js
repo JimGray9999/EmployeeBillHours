@@ -1,11 +1,12 @@
 // Initialize Firebase
+// add your API and config info from Firebase here
 var config = {
-  apiKey: "AIzaSyBuS5HdbUwtidnPxA7CLaA5W18SiMW0Fmw",
-  authDomain: "billable-hours-87d45.firebaseapp.com",
-  databaseURL: "https://billable-hours-87d45.firebaseio.com",
-  projectId: "billable-hours-87d45",
-  storageBucket: "billable-hours-87d45.appspot.com",
-  messagingSenderId: "473483339769"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: ""
 };
 
 firebase.initializeApp(config);
