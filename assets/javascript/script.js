@@ -16,6 +16,8 @@ var empName = "";
 var empRole = "";
 var empStart = "";
 var empRate = "";
+var months = '';
+var billed = '';
 
 
 // on value function
@@ -28,7 +30,12 @@ database.ref().on("child_added", function(snapshot) {
 
 	var sv = snapshot.val();
 
-	$("#empTable").append("<tr>" + sv.empName + "</tr>");
+	$("#empTable").append("<tr><td>" + sv.empName +
+	"</td><td>" + sv.empRole +
+	"</td><td>" + sv.empStart + 
+	"</td><td>" + months +  
+	"</td><td>" + sv.empRate +
+	"</td><td>" + billed +  "</tr>");
 
 });
 
